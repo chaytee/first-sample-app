@@ -1,2 +1,2 @@
-# first-sample-app
+# pre-react-app
 Created with CodeSandbox
