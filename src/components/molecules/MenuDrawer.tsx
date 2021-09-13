@@ -30,10 +30,10 @@ export const MenuDrawer: VFC<Props> = memo((props) => {
         <DrawerContent>
           <DrawerBody as="nav" p={0} bg="gray.100">
             <Button w="100%" onClick={onClickHome}>
-              TOP
+              トップ
             </Button>
             <Button w="100%" onClick={onClickUserManagement}>
-              ユーザー一覧
+              従業員一覧
             </Button>
             <Button w="100%" onClick={onClickSetting}>
               設定

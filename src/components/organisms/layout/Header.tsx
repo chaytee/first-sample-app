@@ -21,8 +21,8 @@ export const Header: VFC = memo(() => {
     <>
       <Flex
         as="nav"
-        bg="teal.500"
-        color="gray.50"
+        bg="#fd999a"
+        color="#fff"
         align="center"
         justify="space-between"
         padding={{ base: 3, md: 5 }}
@@ -35,7 +35,7 @@ export const Header: VFC = memo(() => {
           onClick={onClickHome}
         >
           <Heading as="h1" fontSize={{ base: "md", md: "lg" }}>
-            パパちゃんママちゃん
+            アニマル会社　従業員管理
           </Heading>
         </Flex>
         <Flex

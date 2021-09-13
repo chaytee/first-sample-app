@@ -32,9 +32,9 @@ export const UserDetailModal: VFC<Props> = memo((props) => {
 
   useEffect(() => {
     setUserName(user?.username ?? "");
-    setName(user?.username ?? "");
-    setEmail(user?.username ?? "");
-    setPhone(user?.username ?? "");
+    setName(user?.name ?? "");
+    setEmail(user?.email ?? "");
+    setPhone(user?.phone ?? "");
   }, [user]);
 
   const onChangeUserName = (e: ChangeEvent<HTMLInputElement>) => {

@@ -1,6 +1,6 @@
 import { memo, VFC, useCallback } from "react";
-import { BrowserRouter, useHistory } from "react-router-dom";
-import { Text, Stack, Box, Link } from "@chakra-ui/react";
+import { useHistory } from "react-router-dom";
+import { Text, Stack, Box, Button, Container } from "@chakra-ui/react";
 
 export const Home: VFC = memo(() => {
   const history = useHistory();
@@ -11,28 +11,26 @@ export const Home: VFC = memo(() => {
   const InnerLink = {
     display: "inline-block",
     color: "#fff",
-    backgroundColor: "pink",
-    padding: "10px 15px",
+    backgroundColor: "#fd999a",
+    padding: "10px 20px",
     borderRadius: "10px"
   };
 
   return (
-    <BrowserRouter>
+    <Container>
       <Box padding="7">
         <Stack>
           <Text as="h2" size="md" textAlign="center" mb="6">
-            「パパちゃんママちゃん」はペットの里親を募集するサイトです。
+            アニマル会社　従業員管理
           </Text>
-          <Text as="p" size="sm" mb="6">
-            お気に入りの猫ちゃんを見つけ、会いにいきましょう！
+          <Text as="p" size="md" textAlign="left" mb="6">
+            従業員情報に変更があった場合は、すみやかに修正してください。
           </Text>
-          <Text textAlign="center">
-            <Link onClick={onClickUserManagement} style={InnerLink}>
-              里親募集 ページへ
-            </Link>
-          </Text>
+          <Button onClick={onClickUserManagement} style={InnerLink}>
+            従業員一覧へ
+          </Button>
         </Stack>
       </Box>
-    </BrowserRouter>
+    </Container>
   );
 });
