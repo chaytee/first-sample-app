@@ -33,7 +33,7 @@ export const UserManagement: VFC = memo(() => {
           <Spinner />
         </Center>
       ) : (
-        <Wrap p={{ base: 4, md: 10 }}>
+        <Wrap p={{ base: 4, md: 10 }} maxW="1100px" m="auto">
           {users.map((obj) => (
             <WrapItem key={obj.id} mx="auto">
               <UserCard

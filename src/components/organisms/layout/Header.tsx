@@ -45,7 +45,7 @@ export const Header: VFC = memo(() => {
           display={{ base: "none", md: "flex" }}
         >
           <Box pr={4}>
-            <Link onClick={onClickUserManagement}>里親募集</Link>
+            <Link onClick={onClickUserManagement}>従業員一覧</Link>
           </Box>
           <Link onClick={onClickSetting}>設定</Link>
         </Flex>
