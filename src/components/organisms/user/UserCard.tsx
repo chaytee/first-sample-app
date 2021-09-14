@@ -16,7 +16,7 @@ export const UserCard: VFC<Props> = memo((props) => {
       w="260px"
       h="260px"
       bg="whtite"
-      md="3"
+      mb="5"
       borderRadius="10px"
       shadow="md"
       p={4}
